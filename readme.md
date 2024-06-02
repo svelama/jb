@@ -15,7 +15,7 @@
 /bin/bash jetbrains-clients-downloader --products-filter IU --build-filter 242.12881.66 --include-eap-builds --platforms-filter windows-x64  ~/new2/clients --verbose
 ```
 
-
+```log
 2024-06-01 20:48:49 INFO  Mirroring JetBrains Clients to a local directory '/home/svelama/new/rest4'. Filter:
       filter products: IU
       filter version: <all-supported-versions>
@@ -92,3 +92,4 @@ Start downloading CWM clients and JDKs
 2024-06-01 20:10:26 DEBUG File /home/svelama/new/rest3/JetBrainsClient-242.12881.66-jdk-build.txt.sha256.asc is UP-TO-DATE compared by size and mtime of https://download.jetbrains.com/idea/code-with-me/JetBrainsClient-242.12881.66-jdk-build.txt.sha256.asc
 2024-06-01 20:10:26 INFO  Finished downloading JetBrains Clients and JDKs
 2024-06-01 20:10:26 INFO  Done
+```
