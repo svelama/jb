@@ -1,0 +1,25 @@
+JetBrains Clients downloader script build 1867 git hash d9a3ee1963de214efd8aeef4a7c386433073614b
+
+2024-06-02 12:08:11 INFO  Mirroring JetBrains Clients to a local directory '/home/svelama/new2/backends'. Filter:
+      filter products: IU
+      filter version: <all-supported-versions>
+      filter build: 242.12881.66
+      filter platforms: linux-x64
+      filter include eap builds: true
+2024-06-02 12:08:11 INFO  Directory '/home/svelama/new2/backends' does not exists. Creating...
+2024-06-02 12:08:11 INFO  Downloading products JSON file from https://data.services.jetbrains.com/products
+2024-06-02 12:08:13 INFO  Got products info items size: 73
+2024-06-02 12:08:13 INFO  /home/svelama/new2/backends/minimal_clients_downloader_version is missing on disk, downloading from https://download.jetbrains.com/idea/code-with-me/minimal_clients_downloader_version
+2024-06-02 12:08:13 INFO  Downloaded https://download.jetbrains.com/idea/code-with-me/minimal_clients_downloader_version, Last-Modified is 'Mon, 22 Nov 2021 21:01:21 GMT'
+2024-06-02 12:08:13 INFO  /home/svelama/new2/backends/force_mirror_unix_timestamp_ms is missing on disk, downloading from https://download.jetbrains.com/idea/code-with-me/force_mirror_unix_timestamp_ms
+2024-06-02 12:08:13 INFO  Downloaded https://download.jetbrains.com/idea/code-with-me/force_mirror_unix_timestamp_ms, Last-Modified is 'Sun, 07 Nov 2021 19:26:10 GMT'
+2024-06-02 12:08:13 INFO  /home/svelama/new2/backends/KEYS is missing on disk, downloading from https://download.jetbrains.com/KEYS
+2024-06-02 12:08:13 INFO  Downloaded https://download.jetbrains.com/KEYS, Last-Modified is 'Wed, 15 Mar 2023 11:00:10 GMT'
+2024-06-02 12:08:13 INFO  Will try to force check whether file is updated on server: flag file '/home/svelama/new2/backends/.last_successful_build.a6e952ffae' is missing
+2024-06-02 12:08:13 INFO  Got 1 item(s) after processing and filtering
+2024-06-02 12:08:13 INFO  Start downloading Remote Dev Backends
+2024-06-02 12:08:13 INFO  /home/svelama/new2/backends/backends/IU/ideaIU-242.12881.66.tar.gz is missing on disk, downloading from https://download.jetbrains.com/idea/ideaIU-242.12881.66.tar.gz
+2024-06-02 12:08:20 INFO  Downloaded https://download.jetbrains.com/idea/ideaIU-242.12881.66.tar.gz, Last-Modified is 'Wed, 29 May 2024 20:36:37 GMT'
+2024-06-02 12:08:20 INFO  Updating '/home/svelama/new2/backends/backends/products.json'
+2024-06-02 12:08:20 INFO  Finished downloading JetBrains Clients and JDKs
+2024-06-02 12:08:20 INFO  Done
