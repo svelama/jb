@@ -1,0 +1,30 @@
+[
+    {
+        "intellijProductCode": "IU",
+        "alternativeCodes": [
+            "IU"
+        ],
+        "name": "IntelliJ IDEA Ultimate",
+        "productFamilyName": "IntelliJ IDEA",
+        "link": "https://www.jetbrains.com/idea",
+        "description": "The Leading Java and Kotlin IDE",
+        "categories": [
+            "IDE"
+        ],
+        "releases": [
+            {
+                "type": "eap",
+                "downloads": {
+                    "linux": {
+                        "link": "ideaIU-242.10180.25.tar.gz",
+                        "size": 1383617249
+                    }
+                },
+                "version": "2024.2",
+                "majorVersion": "2024.2",
+                "build": "242.10180.25"
+            }
+        ],
+        "code": "IU"
+    }
+]
