@@ -1,0 +1,98 @@
+svelama@svelama:~/jb/jetbrains-clients-downloader-linux-x86_64-1867/bin$ /bin/bash jetbrains-clients-downloader --products-filter GO --build-filter 241.15989.157 --include-eap-builds --platforms-filter linux-x64 --download-backends /backends
+JetBrains Clients downloader script build 1867 git hash d9a3ee1963de214efd8aeef4a7c386433073614b
+
+2024-06-06 15:19:55 INFO  Mirroring JetBrains Clients to a local directory '/backends'. Filter:
+      filter products: GO
+      filter version: <all-supported-versions>
+      filter build: 241.15989.157
+      filter platforms: linux-x64
+      filter include eap builds: true
+2024-06-06 15:19:55 INFO  Directory '/backends' does not exists. Creating...
+java.nio.file.AccessDeniedException: /backends
+	at java.base/sun.nio.fs.UnixException.translateToIOException(Unknown Source)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(Unknown Source)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(Unknown Source)
+	at java.base/sun.nio.fs.UnixFileSystemProvider.createDirectory(Unknown Source)
+	at java.base/java.nio.file.Files.createDirectory(Unknown Source)
+	at java.base/java.nio.file.Files.createAndCheckIsDirectory(Unknown Source)
+	at java.base/java.nio.file.Files.createDirectories(Unknown Source)
+	at com.jetbrains.codeWithMe.lobby.DownloaderMainKt.mirrorGuestsMainImpl(DownloaderMain.kt:128)
+	at com.jetbrains.codeWithMe.lobby.DownloaderMainKt$main$1.invoke(DownloaderMain.kt:45)
+	at com.jetbrains.codeWithMe.lobby.DownloaderMainKt$main$1.invoke(DownloaderMain.kt:44)
+	at com.jetbrains.codeWithMe.lobby.util.CommonKt.commonMainImpl(common.kt:74)
+	at com.jetbrains.codeWithMe.lobby.DownloaderMainKt.main(DownloaderMain.kt:44)
+svelama@svelama:~/jb/jetbrains-clients-downloader-linux-x86_64-1867/bin$ pwd
+/home/svelama/jb/jetbrains-clients-downloader-linux-x86_64-1867/bin
+svelama@svelama:~/jb/jetbrains-clients-downloader-linux-x86_64-1867/bin$ /bin/bash jetbrains-clients-downloader --products-filter GO --build-filter 241.15989.157 --include-eap-builds --platforms-filter linux-x64 --download-backends ~/jb/backends
+JetBrains Clients downloader script build 1867 git hash d9a3ee1963de214efd8aeef4a7c386433073614b
+
+2024-06-06 15:20:33 INFO  Mirroring JetBrains Clients to a local directory '/home/svelama/jb/backends'. Filter:
+      filter products: GO
+      filter version: <all-supported-versions>
+      filter build: 241.15989.157
+      filter platforms: linux-x64
+      filter include eap builds: true
+2024-06-06 15:20:33 INFO  Directory '/home/svelama/jb/backends' does not exists. Creating...
+2024-06-06 15:20:33 INFO  Downloading products JSON file from https://data.services.jetbrains.com/products
+2024-06-06 15:20:35 INFO  Got products info items size: 73
+2024-06-06 15:20:35 INFO  /home/svelama/jb/backends/minimal_clients_downloader_version is missing on disk, downloading from https://download.jetbrains.com/idea/code-with-me/minimal_clients_downloader_version
+2024-06-06 15:20:35 INFO  Downloaded https://download.jetbrains.com/idea/code-with-me/minimal_clients_downloader_version, Last-Modified is 'Mon, 22 Nov 2021 21:01:21 GMT'
+2024-06-06 15:20:35 INFO  /home/svelama/jb/backends/force_mirror_unix_timestamp_ms is missing on disk, downloading from https://download.jetbrains.com/idea/code-with-me/force_mirror_unix_timestamp_ms
+2024-06-06 15:20:35 INFO  Downloaded https://download.jetbrains.com/idea/code-with-me/force_mirror_unix_timestamp_ms, Last-Modified is 'Sun, 07 Nov 2021 19:26:10 GMT'
+2024-06-06 15:20:35 INFO  /home/svelama/jb/backends/KEYS is missing on disk, downloading from https://download.jetbrains.com/KEYS
+2024-06-06 15:20:35 INFO  Downloaded https://download.jetbrains.com/KEYS, Last-Modified is 'Wed, 15 Mar 2023 11:00:10 GMT'
+2024-06-06 15:20:35 INFO  Will try to force check whether file is updated on server: flag file '/home/svelama/jb/backends/.last_successful_build.a7cfa7fa8b' is missing
+2024-06-06 15:20:35 INFO  Got 1 item(s) after processing and filtering
+2024-06-06 15:20:35 INFO  Start downloading Remote Dev Backends
+2024-06-06 15:20:35 INFO  /home/svelama/jb/backends/backends/GO/goland-2024.1.1.tar.gz is missing on disk, downloading from https://download.jetbrains.com/go/goland-2024.1.1.tar.gz
+2024-06-06 15:20:52 INFO  Downloaded https://download.jetbrains.com/go/goland-2024.1.1.tar.gz, Last-Modified is 'Tue, 30 Apr 2024 09:43:07 GMT'
+2024-06-06 15:20:52 INFO  Updating '/home/svelama/jb/backends/backends/products.json'
+2024-06-06 15:20:52 INFO  Finished downloading JetBrains Clients and JDKs
+2024-06-06 15:20:52 INFO  Done
+svelama@svelama:~/jb/jetbrains-clients-downloader-linux-x86_64-1867/bin$ /bin/bash jetbrains-clients-downloader --products-filter GO --build-filter 241.15989.157 --include-eap-builds --platforms-filter windows-x64  ~/jb/clients
+JetBrains Clients downloader script build 1867 git hash d9a3ee1963de214efd8aeef4a7c386433073614b
+
+2024-06-06 15:22:29 INFO  Mirroring JetBrains Clients to a local directory '/home/svelama/jb/clients'. Filter:
+      filter products: GO
+      filter version: <all-supported-versions>
+      filter build: 241.15989.157
+      filter platforms: windows-x64
+      filter include eap builds: true
+2024-06-06 15:22:29 INFO  Directory '/home/svelama/jb/clients' does not exists. Creating...
+2024-06-06 15:22:29 INFO  Downloading products JSON file from https://data.services.jetbrains.com/products
+2024-06-06 15:22:32 INFO  Got products info items size: 73
+2024-06-06 15:22:32 INFO  /home/svelama/jb/clients/minimal_clients_downloader_version is missing on disk, downloading from https://download.jetbrains.com/idea/code-with-me/minimal_clients_downloader_version
+2024-06-06 15:22:32 INFO  Downloaded https://download.jetbrains.com/idea/code-with-me/minimal_clients_downloader_version, Last-Modified is 'Mon, 22 Nov 2021 21:01:21 GMT'
+2024-06-06 15:22:32 INFO  /home/svelama/jb/clients/force_mirror_unix_timestamp_ms is missing on disk, downloading from https://download.jetbrains.com/idea/code-with-me/force_mirror_unix_timestamp_ms
+2024-06-06 15:22:32 INFO  Downloaded https://download.jetbrains.com/idea/code-with-me/force_mirror_unix_timestamp_ms, Last-Modified is 'Sun, 07 Nov 2021 19:26:10 GMT'
+2024-06-06 15:22:32 INFO  /home/svelama/jb/clients/KEYS is missing on disk, downloading from https://download.jetbrains.com/KEYS
+2024-06-06 15:22:32 INFO  Downloaded https://download.jetbrains.com/KEYS, Last-Modified is 'Wed, 15 Mar 2023 11:00:10 GMT'
+2024-06-06 15:22:32 INFO  Will try to force check whether file is updated on server: flag file '/home/svelama/jb/clients/.last_successful_build.646f15030f' is missing
+2024-06-06 15:22:32 INFO  Got 2 item(s) after processing and filtering
+2024-06-06 15:22:32 INFO  Start downloading CWM clients and JDKs
+2024-06-06 15:22:32 INFO  /home/svelama/jb/clients/JetBrainsClient-241.15989.157.jbr.win.zip is missing on disk, downloading from https://download.jetbrains.com/idea/code-with-me/JetBrainsClient-241.15989.157.jbr.win.zip
+2024-06-06 15:22:40 INFO  Downloaded https://download.jetbrains.com/idea/code-with-me/JetBrainsClient-241.15989.157.jbr.win.zip, Last-Modified is 'Tue, 30 Apr 2024 05:54:55 GMT'
+2024-06-06 15:22:40 INFO  /home/svelama/jb/clients/JetBrainsClient-241.15989.157.jbr.win.zip.sha256 is missing on disk, downloading from https://download.jetbrains.com/idea/code-with-me/JetBrainsClient-241.15989.157.jbr.win.zip.sha256
+2024-06-06 15:22:40 INFO  Downloaded https://download.jetbrains.com/idea/code-with-me/JetBrainsClient-241.15989.157.jbr.win.zip.sha256, Last-Modified is 'Tue, 30 Apr 2024 05:54:56 GMT'
+2024-06-06 15:22:40 INFO  /home/svelama/jb/clients/JetBrainsClient-241.15989.157.jbr.win.zip.sha256.asc is missing on disk, downloading from https://download.jetbrains.com/idea/code-with-me/JetBrainsClient-241.15989.157.jbr.win.zip.sha256.asc
+2024-06-06 15:22:40 INFO  Downloaded https://download.jetbrains.com/idea/code-with-me/JetBrainsClient-241.15989.157.jbr.win.zip.sha256.asc, Last-Modified is 'Tue, 30 Apr 2024 05:54:56 GMT'
+2024-06-06 15:22:41 INFO  /home/svelama/jb/clients/JetBrainsClient-241.15989.157-jdk-build.txt is missing on disk, downloading from https://download.jetbrains.com/idea/code-with-me/JetBrainsClient-241.15989.157-jdk-build.txt
+2024-06-06 15:22:41 INFO  Downloaded https://download.jetbrains.com/idea/code-with-me/JetBrainsClient-241.15989.157-jdk-build.txt, Last-Modified is 'Tue, 30 Apr 2024 05:54:35 GMT'
+2024-06-06 15:22:41 INFO  /home/svelama/jb/clients/JetBrainsClient-241.15989.157-jdk-build.txt.sha256 is missing on disk, downloading from https://download.jetbrains.com/idea/code-with-me/JetBrainsClient-241.15989.157-jdk-build.txt.sha256
+2024-06-06 15:22:42 INFO  Downloaded https://download.jetbrains.com/idea/code-with-me/JetBrainsClient-241.15989.157-jdk-build.txt.sha256, Last-Modified is 'Tue, 30 Apr 2024 05:54:36 GMT'
+2024-06-06 15:22:42 INFO  /home/svelama/jb/clients/JetBrainsClient-241.15989.157-jdk-build.txt.sha256.asc is missing on disk, downloading from https://download.jetbrains.com/idea/code-with-me/JetBrainsClient-241.15989.157-jdk-build.txt.sha256.asc
+2024-06-06 15:22:42 INFO  Downloaded https://download.jetbrains.com/idea/code-with-me/JetBrainsClient-241.15989.157-jdk-build.txt.sha256.asc, Last-Modified is 'Tue, 30 Apr 2024 05:54:36 GMT'
+2024-06-06 15:22:42 INFO  /home/svelama/jb/clients/jbr_jcef-17_0_10-windows-x64-b1207.14.tar.gz is missing on disk, downloading from https://download.jetbrains.com/idea/jbr/jbr_jcef-17_0_10-windows-x64-b1207.14.tar.gz
+2024-06-06 15:22:46 INFO  Downloaded https://download.jetbrains.com/idea/jbr/jbr_jcef-17_0_10-windows-x64-b1207.14.tar.gz, Last-Modified is 'Mon, 08 Apr 2024 03:52:55 GMT'
+2024-06-06 15:22:46 INFO  /home/svelama/jb/clients/jbr_jcef-17_0_10-windows-x64-b1207.14.tar.gz.sha256 is missing on disk, downloading from https://download.jetbrains.com/idea/jbr/jbr_jcef-17_0_10-windows-x64-b1207.14.tar.gz.sha256
+2024-06-06 15:22:46 INFO  Downloaded https://download.jetbrains.com/idea/jbr/jbr_jcef-17_0_10-windows-x64-b1207.14.tar.gz.sha256, Last-Modified is 'Mon, 08 Apr 2024 03:52:56 GMT'
+2024-06-06 15:22:46 INFO  /home/svelama/jb/clients/jbr_jcef-17_0_10-windows-x64-b1207.14.tar.gz.sha256.asc is missing on disk, downloading from https://download.jetbrains.com/idea/jbr/jbr_jcef-17_0_10-windows-x64-b1207.14.tar.gz.sha256.asc
+2024-06-06 15:22:46 INFO  Downloaded https://download.jetbrains.com/idea/jbr/jbr_jcef-17_0_10-windows-x64-b1207.14.tar.gz.sha256.asc, Last-Modified is 'Mon, 08 Apr 2024 03:52:55 GMT'
+2024-06-06 15:22:47 INFO  /home/svelama/jb/clients/JetBrainsClient-241.15989.157.win.zip is missing on disk, downloading from https://download.jetbrains.com/idea/code-with-me/JetBrainsClient-241.15989.157.win.zip
+2024-06-06 15:22:50 INFO  Downloaded https://download.jetbrains.com/idea/code-with-me/JetBrainsClient-241.15989.157.win.zip, Last-Modified is 'Tue, 30 Apr 2024 05:54:58 GMT'
+2024-06-06 15:22:50 INFO  /home/svelama/jb/clients/JetBrainsClient-241.15989.157.win.zip.sha256 is missing on disk, downloading from https://download.jetbrains.com/idea/code-with-me/JetBrainsClient-241.15989.157.win.zip.sha256
+2024-06-06 15:22:50 INFO  Downloaded https://download.jetbrains.com/idea/code-with-me/JetBrainsClient-241.15989.157.win.zip.sha256, Last-Modified is 'Tue, 30 Apr 2024 05:54:58 GMT'
+2024-06-06 15:22:50 INFO  /home/svelama/jb/clients/JetBrainsClient-241.15989.157.win.zip.sha256.asc is missing on disk, downloading from https://download.jetbrains.com/idea/code-with-me/JetBrainsClient-241.15989.157.win.zip.sha256.asc
+2024-06-06 15:22:50 INFO  Downloaded https://download.jetbrains.com/idea/code-with-me/JetBrainsClient-241.15989.157.win.zip.sha256.asc, Last-Modified is 'Tue, 30 Apr 2024 05:54:58 GMT'
+2024-06-06 15:22:51 INFO  Finished downloading JetBrains Clients and JDKs
+2024-06-06 15:22:51 INFO  Done
