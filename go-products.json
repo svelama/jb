@@ -1,0 +1,30 @@
+[
+    {
+        "intellijProductCode": "GO",
+        "alternativeCodes": [
+            "GO"
+        ],
+        "name": "GoLand",
+        "productFamilyName": "GoLand",
+        "link": "https://www.jetbrains.com/go",
+        "description": "An IDE for Go and Web",
+        "categories": [
+            "IDE"
+        ],
+        "releases": [
+            {
+                "type": "release",
+                "downloads": {
+                    "linux": {
+                        "link": "GO/goland-2024.1.1.tar.gz",
+                        "size": 887361990
+                    }
+                },
+                "version": "2024.1.1",
+                "majorVersion": "2024.1",
+                "build": "241.15989.157"
+            }
+        ],
+        "code": "GO"
+    }
+]
